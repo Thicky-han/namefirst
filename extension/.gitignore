@@ -1,0 +1,12 @@
+# Environment files
+.env
+.env.local
+
+# Build outputs
+dist/
+
+# Dependencies
+node_modules/
+
+# Playwright
+test-results/

@@ -1,0 +1,56 @@
+name: Brave
+homepage: https://github.com/ublacklist/builtin#readme
+lastModified: 2025-08-10T05:16:20Z
+
+pages:
+  - name: Web
+    matches:
+      - https://search.brave.com/search?*
+    results:
+      - root: .snippet[data-type="web"]
+        url: a
+        props:
+          title: .title
+    commonProps:
+      $site: brave
+      $category: web
+    delay: 100
+
+  - name: Images
+    matches:
+      - https://search.brave.com/images?*
+    results:
+      - root: .image-result
+        url: [domainToURL, ".image-metadata-source"]
+        props:
+          title: .image-metadata-title
+    commonProps:
+      $site: brave
+      $category: images
+    delay: 100
+
+  - name: News
+    matches:
+      - https://search.brave.com/news?*
+    results:
+      - root: .snippet[data-type="news"]
+        url: a
+        props:
+          title: .snippet-title
+    commonProps:
+      $site: brave
+      $category: news
+    delay: 100
+
+  - name: Videos
+    matches:
+      - https://search.brave.com/videos?*
+    results:
+      - root: .snippet[data-type="videos"]
+        url: a
+        props:
+          title: .snippet-title
+    commonProps:
+      $site: brave
+      $category: videos
+    delay: 100

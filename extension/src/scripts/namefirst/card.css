@@ -1,0 +1,150 @@
+/* SPDX-License-Identifier: LicenseRef-NameFirst-NC-Reciprocal-1.0 */
+:host {
+  display: block;
+  font:
+    15px/1.55 system-ui,
+    sans-serif;
+  color: #17382b;
+}
+section {
+  background: #f1faf5;
+  border: 1px solid #83b59a;
+  border-left: 4px solid #23764b;
+  border-radius: 10px;
+  padding: 18px 20px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #35664c;
+}
+h2 {
+  margin: 8px 0 5px;
+  font-size: 22px;
+  line-height: 1.35;
+}
+p {
+  margin: 6px 0;
+}
+a {
+  color: #12673d;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+a:hover {
+  color: #084523;
+}
+.domain {
+  display: block;
+  font-size: 13px;
+  color: #4d6156;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 12px 0;
+  font-size: 14px;
+}
+button {
+  background: transparent;
+  color: inherit;
+  border: 1px solid #83b59a;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font: inherit;
+  cursor: pointer;
+}
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #147846;
+  outline-offset: 3px;
+}
+details {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #4d6156;
+}
+summary {
+  cursor: pointer;
+}
+ul {
+  margin: 8px 0;
+  padding-left: 22px;
+}
+.choice {
+  margin: 12px 0;
+}
+.notice {
+  font-size: 13px;
+}
+.feedback {
+  border-top: 1px solid #83b59a;
+  padding-top: 10px;
+  margin-top: 14px;
+}
+.feedback label {
+  display: block;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.feedback input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #83b59a;
+  border-radius: 5px;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+}
+.feedback button {
+  margin: 4px 8px 4px 0;
+}
+.candidate-options button {
+  display: block;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.personal-note {
+  border: 1px solid #b69d48;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+@media (prefers-color-scheme: dark) {
+  :host {
+    color: #e5f4eb;
+  }
+  section {
+    background: #172d23;
+    border-color: #5b9470;
+  }
+  header,
+  a {
+    color: #9be0b5;
+  }
+  a:hover {
+    color: #d5f8e0;
+  }
+  .domain,
+  details {
+    color: #b5cbbc;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    padding: 14px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,76 @@
+NameFirst licensing and attribution notice
+2026-10-13
+
+Original NameFirst material:
+First-release branding: 2026-10-14. The accepted original NF/upward-arrow
+mark replaces the upstream prohibition icon in NameFirst builds; original
+upstream icons remain in source. Public documentation, source/privacy
+checks and publication preparation are added. No trademark registration
+or exclusive ownership guarantee for the generated artwork is asserted.
+Contribution policy update: 2026-10-14. Public LICENSE 1.0 remains
+unchanged. CLA.md supplies a separate, explicitly executed contribution
+grant for commercial use, proprietary distribution and sublicensing to
+the Recipient privately identified in each acceptance record. The public
+project contact is @Thicky-han; this is not a claim to all contributors'
+copyright. No unsigned or historical contribution, upstream or third-party
+rights are presumed licensed by this policy. Private signing records are
+not part of these archives. See CLA_GUIDE.md and CONTRIBUTING.md.
+Stage 6 update: 2026-10-14. The initial delivery expands the original
+catalog from 16 to 50 subjects with reviewed official sources. Original
+packaging, archive verification, runtime capability checks, installation,
+privacy and release materials are added. Version 1.0.0 preserves the
+existing extension identity. User-reported Baidu manual verification is
+recorded separately from automated live and controlled browser results.
+Stage 5 update: 2026-10-14. Original local record management UI, JSON
+backup / import validation, v1-to-v2 storage migration, batch undo,
+per-engine controls and draft protection are added. Browser tests cover
+actual file downloads and recovery into fresh profiles. No account,
+server, remote synchronization or new runtime dependency is introduced.
+Stage 4 update: 2026-10-14. Original local memory, feedback and candidate
+modules, a serialized local extension message worker, and persistence /
+correction / undo / concurrency tests are added. No service or server is
+required. The upstream cloud background worker remains omitted; the new
+NameFirst memory worker is independent original code.
+Copyright (c) 2026 NameFirst contributors; each contributor retains their
+own copyright. Licensed under the NameFirst Noncommercial Reciprocal
+License, version 1.0. See LICENSE in the source repository, or LICENSE.txt
+in the packaged NameFirst development build, and LICENSE_SCOPE.md.
+Stage 1 adds original modules and catalog curation under
+extension/src/scripts/namefirst/. These are not imported upstream files.
+Catalog facts and website names remain subject to their underlying rights;
+website content, logos, and upstream project code are not copied into it.
+Stage 2 adds original Bing card, manifest, popup and browser-test modules.
+It modifies extension/scripts/build.ts with an opt-in NameFirst profile;
+original MIT material remains MIT and only NameFirst additions carry the
+NameFirst license. See MODIFICATIONS.md for paths, changes and date.
+Stage 3 adds original Baidu adaptation and a shared search lifecycle;
+manifest, popup, packaging and browser tests now cover Baidu and Bing.
+No Baidu website HTML, scripts or stylesheet are redistributed in the
+extension. Controlled test pages are original test fixtures.
+
+Upstream extension:
+uBlacklist by iorate and its contributors
+https://github.com/iorate/ublacklist
+Version v10.1.2, commit 212384b330002a4c727b034806826e2eb352d7d5
+Copyright (c) 2018 iorate
+MIT License; original text preserved at extension/LICENSE.txt in the source
+repository and UPSTREAM-LICENSE.txt in packaged NameFirst builds.
+
+Imported upstream rules:
+https://github.com/ublacklist/builtin
+Commit c8bd5b7113dc1d416fa00c45509ac308619751df
+Included as the upstream builtin submodule's flattened contents. These are
+imported upstream material, not original NameFirst contributions. Retain
+their upstream provenance and any applicable notices.
+
+Other third-party material:
+Retains its respective copyright and license. The source repository
+preserves bundled third-party notices, including
+extension/third-party/is-mobile/LICENSE. Packaged builds include generated
+third-party-notices.txt for bundled dependencies.
+
+The NameFirst license does not revoke upstream or third-party permissions,
+including commercial permissions already granted under MIT. The original
+upstream code may still be obtained and used under its original license.
+NameFirst is an independent derived project, without an assertion of
+upstream endorsement.

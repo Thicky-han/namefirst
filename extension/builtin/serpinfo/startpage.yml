@@ -1,0 +1,33 @@
+name: Startpage
+homepage: https://github.com/ublacklist/builtin#readme
+lastModified: 2025-08-28T11:41:30Z
+
+pages:
+  - name: Default
+    matches:
+      - https://*.startpage.com/do/*
+      - https://*.startpage.com/rvd/*
+      - https://*.startpage.com/sp/*
+    results:
+      - root: :is(.w-gl, .w-bg) > .result
+        url: .result-link
+        props:
+          title: h2
+          $category: [const, "web"]
+      - root: .image-container
+        url: [domainToURL, ".image-quick-details > span"]
+        props:
+          title: .image-quick-details > div
+          $category: [const, "images"]
+      - root: .article
+        url: a
+        props:
+          title: h3
+          $category: [const, "news"]
+      - root: .vo-bg > .result
+        url: a
+        props:
+          title: h3
+          $category: [const, "videos"]
+    commonProps:
+      $site: startpage

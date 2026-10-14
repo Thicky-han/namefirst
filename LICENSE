@@ -1,0 +1,162 @@
+NameFirst Noncommercial Reciprocal License
+Version 1.0, 2026-10-13
+Local license identifier: LicenseRef-NameFirst-NC-Reciprocal-1.0
+
+Copyright (c) 2026 NameFirst contributors.
+Each contributor retains copyright in their own contributions.
+
+1. Scope and definitions
+
+"Licensor" means each copyright holder offering their own material under
+this License. "You" means the person or organization exercising the rights
+granted here. "Covered Material" means the original NameFirst code,
+documentation, build files, and other copyrightable material offered under
+this License, including subsequent modifications to that material.
+
+Upstream uBlacklist material, imported upstream rules, third-party packages,
+and other separately licensed material are NOT Covered Material. Their own
+licenses continue to apply. In a modified upstream file, this License covers
+only the original NameFirst additions or modifications offered under it;
+it does not replace the license of the pre-existing material. Consult
+LICENSE_SCOPE.md, NOTICE, UPSTREAM.json, and the accompanying third-party
+notices to identify these boundaries. No exclusive right over names, facts,
+public website addresses, or other uncopyrightable information is asserted.
+
+"Modified Version" means Covered Material that You have changed or a work
+incorporating or derived from Covered Material. Independently created works
+merely distributed alongside it are not Covered Material.
+
+"Distribution" means providing copies of Covered Material or a Modified
+Version to another person or organization, whether as source, a compiled
+extension, another executable, or any other form. Private use and internal
+sharing within the same organization are not Distribution under this License.
+Operating a network service without providing copies is not Distribution;
+the restrictions on Commercial Exploitation still apply to that service.
+
+2. Permission
+
+Subject to these conditions, each Licensor grants You a worldwide,
+non-exclusive, royalty-free copyright license to use, reproduce, study,
+modify, and distribute their Covered Material for Permitted Use.
+
+"Permitted Use" includes personal use, learning, research, unpaid community
+projects, free distribution, and an organization's internal use without
+selling, charging for, or otherwise monetizing the Covered Material or its
+functionality. This includes free internal use by a for-profit organization
+and use by its employees in their ordinary work.
+
+3. No Commercial Exploitation
+
+You must not commercially exploit Covered Material or a Modified Version
+without a separate written permission from every relevant rights holder.
+"Commercial Exploitation" includes:
+
+(a) selling, renting, or licensing access to the material or its functionality
+    for a fee, subscription, mandatory donation, or other consideration;
+(b) offering paid hosted services or paid support, installation, customization,
+    or consulting whose subject is the material or a Modified Version;
+(c) monetizing its distribution, interface, results, or operation through
+    advertising, sponsorship, affiliate commissions, sale of user data, or
+    similar revenue arrangements; and
+(d) bundling the material into a paid or otherwise monetized product or service,
+    including disguising a charge as a fee for another bundled component.
+
+Free internal business use allowed by section 2 is not Commercial
+Exploitation merely because it helps an organization conduct its business.
+Visiting commercial websites, purchasing unrelated goods, or doing unrelated
+paid work with ordinary search assistance is not prohibited. General hosting
+platform advertisements outside the distributed project's interface do not
+by themselves turn a free public source repository into Commercial
+Exploitation, provided You receive no revenue from those advertisements.
+
+4. Distribution and public corresponding source
+
+Whenever You distribute Covered Material or a Modified Version, You must:
+
+(a) provide a copy of this License, retain applicable copyright, attribution,
+    and license notices, and identify Your material changes and their dates;
+(b) license the Covered Material and Your modifications to it under this same
+    License, version 1.0, without additional restrictions on its permitted use;
+(c) make the complete Corresponding Source for the exact distributed version
+    publicly available, without payment or a required account, at the time of
+    Distribution, and provide recipients with a clear source download address
+    or include it with the distributed source; and
+(d) keep that source available for as long as You offer the distributed version
+    and for at least three years after Your last Distribution of that version.
+
+"Corresponding Source" means the preferred editable form of the distributed
+Covered Material and all Your modifications, together with the scripts,
+configuration, dependency manifests, lockfiles, and instructions needed to
+build and install the distributed version. Minified, obfuscated, generated,
+or compiled files alone do not satisfy this requirement.
+
+For separately licensed components needed to build the version, include
+their source where their license requires it; otherwise provide exact
+versions and publicly accessible retrieval instructions or sources. General
+purpose tools that are not part of the distributed software need not be
+included. Do not publish private signing keys, credentials, or personal user
+data; provide safe configuration instructions or example values instead.
+
+Distribution of an unchanged copy also requires identifying its exact
+Corresponding Source. An existing public source location may be used, but
+You remain responsible for meeting this section if it becomes unavailable.
+
+Private modifications need not be published until Distribution occurs.
+These reciprocal requirements apply only to Covered Material and changes
+to it. They do not relicense upstream or third-party material, impose this
+License on independent works, or remove rights already granted by another
+license. Recipients receive the permissions here directly from the relevant
+Licensors, subject to these same conditions.
+
+5. Attribution and identity
+
+Preserve the NameFirst attribution for the Covered Material and clearly
+identify a Modified Version as modified. Do not imply that its original
+authors, maintainers, or upstream authors endorse Your version. No trademark
+rights are granted, other than the use of names necessary for attribution
+and accurate description.
+
+6. Contributions and separate permissions
+
+If You intentionally submit an original contribution for inclusion in
+NameFirst, identify its authorship and license. Contributions accepted as
+Covered Material must be offered under this License. Copyright is not
+transferred to the maintainer. Third-party material must be identified and
+provided under its actual license; You may not grant rights You do not hold.
+
+A maintainer cannot grant a commercial exception for another contributor's
+material without that contributor's authority. No right to a commercial
+license, and no automatic conversion to another license, is promised.
+
+7. Termination and reinstatement
+
+The rights granted to You under this License terminate automatically if
+You violate its conditions. If You cure a violation within 30 days of first
+becoming aware of it, those rights are reinstated unless the relevant
+Licensor has previously reinstated Your rights after an earlier violation.
+In other cases, reinstatement requires that Licensor's written permission.
+Termination does not remove obligations arising from copies You already
+distributed, or terminate the rights of recipients who remain compliant.
+
+8. No warranty; limitation of liability
+
+To the extent permitted by applicable law, Covered Material is provided
+as-is and as available, without express or implied warranties, including
+merchantability, fitness for a particular purpose, title, or non-infringement.
+No Licensor or contributor is liable for loss, damage, or other claims arising
+from the material or its use, whether in contract, tort, or otherwise. This
+section does not exclude liability that applicable law does not allow to be
+excluded.
+
+9. Interpretation and version
+
+Only this English text is the authoritative License; summaries and translations
+are explanatory. Where a provision cannot be enforced under applicable law,
+the remaining provisions continue to apply to the extent permitted by law.
+Rights not expressly granted are reserved. Nothing here limits rights that
+cannot lawfully be restricted. This is version 1.0 only: later license texts
+do not automatically change the terms of copies received under this version.
+
+This is a custom source-available license with noncommercial restrictions.
+It is not an OSI-approved open-source license. The local identifier above
+is not an identifier registered in the SPDX License List.

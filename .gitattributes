@@ -1,0 +1,15 @@
+* text=auto eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.ps1 text eol=lf
+LICENSE -text
+extension/LICENSE.txt -text
+extension/third-party/is-mobile/LICENSE -text

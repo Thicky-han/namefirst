@@ -1,0 +1,41 @@
+/* SPDX-License-Identifier: LicenseRef-NameFirst-NC-Reciprocal-1.0 */
+body {
+  width: 300px;
+  margin: 0;
+  padding: 20px;
+  font:
+    14px/1.6 system-ui,
+    sans-serif;
+  color: #1c302a;
+  background: #f6faf8;
+}
+h1 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px;
+  background: #e3f0e9;
+  border-radius: 8px;
+  font-weight: 600;
+}
+input {
+  accent-color: #19754e;
+  width: 18px;
+  height: 18px;
+}
+p {
+  margin: 12px 0;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #15221e;
+    color: #e7f2ec;
+  }
+  label {
+    background: #244035;
+  }
+}

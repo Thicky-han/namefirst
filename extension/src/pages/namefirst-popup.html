@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- NameFirst original UI: LicenseRef-NameFirst-NC-Reciprocal-1.0 -->
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="color-scheme" content="light dark" />
+    <title>NameFirst</title>
+    <link rel="stylesheet" href="../scripts/namefirst-popup.css" />
+  </head>
+  <body>
+    <h1>NameFirst</h1>
+    <p>
+      <a href="namefirst-manager.html" target="_blank" rel="noopener noreferrer"
+        >管理个人记录与备份</a
+      >
+    </p>
+    <p>在百度和 Bing 搜索中优先显示已核实的官方入口。</p>
+    <label><input id="enabled" type="checkbox" disabled /> 启用官网优先</label>
+    <label
+      ><input id="feedback-enabled" type="checkbox" disabled />
+      显示个人反馈入口</label
+    >
+    <p id="status" role="status">正在读取设置…</p>
+    <p id="memory-status" role="status">正在读取个人记忆…</p>
+    <button id="undo-memory" type="button" hidden>撤销最近记忆修改</button>
+    <p>本地处理，无需账号；不会上传你的搜索或个人数据。</p>
+    <p>
+      支持桌面百度和 Bing
+      网页搜索。个人目标和别名仅保存到此浏览器配置；关闭反馈入口不会清除记忆。同名网站由你选择。
+    </p>
+    <script src="../scripts/namefirst-popup.js"></script>
+  </body>
+</html>

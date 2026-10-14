@@ -1,0 +1,1768 @@
+{
+  "schemaVersion": 1,
+  "version": "2026.10.14.1",
+  "updatedAt": "2026-10-14",
+  "materialLicense": "LicenseRef-NameFirst-NC-Reciprocal-1.0",
+  "platforms": [
+    {
+      "id": "steam",
+      "canonicalName": "Steam",
+      "description": "Valve 游戏平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://store.steampowered.com/",
+          "purpose": "store",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "community",
+          "label": "Steam 社区",
+          "url": "https://steamcommunity.com/",
+          "purpose": "community",
+          "language": "und",
+          "region": "global",
+          "names": ["Steam Community"],
+          "evidenceIds": ["primary", "community"]
+        },
+        {
+          "id": "support",
+          "label": "Steam 支持",
+          "url": "https://help.steampowered.com/",
+          "purpose": "support",
+          "language": "und",
+          "region": "global",
+          "names": ["Steam Support"],
+          "evidenceIds": ["support"]
+        },
+        {
+          "id": "download",
+          "label": "Steam 客户端下载页面",
+          "url": "https://store.steampowered.com/about/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://store.steampowered.com/about/",
+            "kind": "official-site",
+            "note": "Steam 自身介绍页明确展示平台名称，并链接商店、社区及安装入口。"
+          },
+          {
+            "id": "community",
+            "url": "https://steamcommunity.com/",
+            "kind": "official-site",
+            "note": "经 Steam 自身介绍页交叉链接进入社区页，页面显示 Steam Community 名称。"
+          },
+          {
+            "id": "support",
+            "url": "https://help.steampowered.com/",
+            "kind": "official-site",
+            "note": "Steam Support 页面展示 Steam 支持入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "github",
+      "canonicalName": "GitHub",
+      "description": "代码托管与协作平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://github.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://github.com/",
+            "kind": "official-site",
+            "note": "GitHub 自身主页展示品牌与平台导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bilibili",
+      "canonicalName": "哔哩哔哩",
+      "description": "视频社区",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "bilibili",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.bilibili.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.bilibili.com/",
+            "kind": "official-site",
+            "note": "本次读取被导向同域旧浏览器提示页，页面显示哔哩哔哩客户端及版权署名；不据此验证未列出的其他子站。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wikipedia",
+      "canonicalName": "Wikipedia",
+      "description": "维基百科",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "维基百科",
+          "evidenceIds": ["chinese"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.wikipedia.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "chinese",
+          "label": "中文维基百科",
+          "url": "https://zh.wikipedia.org/",
+          "purpose": "home",
+          "language": "zh",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary", "chinese"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.wikipedia.org/",
+            "kind": "official-site",
+            "note": "Wikipedia 多语言首页链接中文及英文维基百科。"
+          },
+          {
+            "id": "chinese",
+            "url": "https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5",
+            "kind": "official-site",
+            "note": "中文维基百科首页展示“维基百科”名称。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "firefox",
+      "canonicalName": "Firefox",
+      "description": "Mozilla 浏览器",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.firefox.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "chinese",
+          "label": "Firefox 中文入口",
+          "url": "https://www.firefox.com/zh-CN/",
+          "purpose": "home",
+          "language": "zh-CN",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["chinese"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.mozilla.org/en-US/firefox/new/",
+            "kind": "official-cross-link",
+            "note": "Mozilla 原 Firefox 下载入口现跳转到 www.firefox.com/en-US/，确认新官网域名。"
+          },
+          {
+            "id": "chinese",
+            "url": "https://www.firefox.com/zh-CN/",
+            "kind": "official-site",
+            "note": "Firefox 当前中文路径入口可读取。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "python",
+      "canonicalName": "Python",
+      "description": "编程语言",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.python.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "docs",
+          "label": "Python 官方文档",
+          "url": "https://docs.python.org/",
+          "purpose": "docs",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.python.org/",
+            "kind": "official-site",
+            "note": "Python 自身主页展示项目名称，并链接官方文档。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "apple",
+      "canonicalName": "Apple",
+      "description": "Apple 公司与产品",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.apple.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "china",
+          "label": "Apple 中国大陆",
+          "url": "https://www.apple.com.cn/",
+          "purpose": "home",
+          "language": "zh-CN",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["china"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.apple.com/",
+            "kind": "official-site",
+            "note": "Apple 自身主页展示品牌和产品导航。"
+          },
+          {
+            "id": "china",
+            "url": "https://www.apple.com/cn/",
+            "kind": "official-cross-link",
+            "note": "Apple 原中国大陆路径现跳转到 www.apple.com.cn/，目标页面标明中国大陆官方网站。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "microsoft",
+      "canonicalName": "Microsoft",
+      "description": "Microsoft 公司与产品",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.microsoft.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "chinese",
+          "label": "Microsoft 中文入口",
+          "url": "https://www.microsoft.com/zh-cn/",
+          "purpose": "home",
+          "language": "zh-CN",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["chinese"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.microsoft.com/",
+            "kind": "official-site",
+            "note": "Microsoft 自身主页展示品牌与产品；可能按地区跳转。"
+          },
+          {
+            "id": "chinese",
+            "url": "https://www.microsoft.com/zh-cn/",
+            "kind": "official-site",
+            "note": "Microsoft 中文入口可读取；未将未经此证据展示的中文别名列为已核实别名。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "blender",
+      "canonicalName": "Blender",
+      "description": "三维创作软件",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.blender.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://github.com/blender/blender",
+            "kind": "official-repository",
+            "note": "Blender 官方镜像仓库的 Project Pages 明确链接 Main Website 到 www.blender.org；官网直接抓取受限，未宣称本次直接检查其页面内容。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vlc",
+      "canonicalName": "VLC media player",
+      "description": "VideoLAN 媒体播放器",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "VLC",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.videolan.org/vlc/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://github.com/videolan/vlc",
+            "kind": "official-repository",
+            "note": "VideoLAN VLC 仓库展示产品名称 VLC media player、VLC 简称及 www.videolan.org/vlc 项目链接；官网直接抓取受限。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "obs",
+      "canonicalName": "OBS Studio",
+      "description": "录屏与直播软件",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "OBS",
+          "evidenceIds": ["primary"]
+        },
+        {
+          "name": "Open Broadcaster Software",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://obsproject.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://obsproject.com/",
+            "kind": "official-site",
+            "note": "OBS 自身主页展示 OBS、OBS Studio 和 Open Broadcaster Software 名称。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "baidu",
+      "canonicalName": "百度",
+      "description": "百度搜索",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.baidu.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.baidu.com/",
+            "kind": "official-site",
+            "note": "百度自身搜索主页及署名确认名称与入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bing",
+      "canonicalName": "Microsoft Bing",
+      "description": "Microsoft 搜索引擎",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "Bing",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.bing.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.bing.com/",
+            "kind": "official-site",
+            "note": "搜索页标题标明 Microsoft Bing，页面展示 Bing Search。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rust-language",
+      "canonicalName": "Rust",
+      "description": "编程语言",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "Rust Programming Language",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://rust-lang.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://rust-lang.org/",
+            "kind": "official-site",
+            "note": "Rust 官方项目主页标题为 Rust Programming Language；与同名 Facepunch 游戏分别记录。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rust-game",
+      "canonicalName": "Rust",
+      "description": "Facepunch 生存游戏",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://rust.facepunch.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://rust.facepunch.com/",
+            "kind": "official-site",
+            "note": "Facepunch 游戏官网展示 Rust 游戏内容和版权主体，与编程语言分别记录。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nodejs",
+      "canonicalName": "Node.js",
+      "description": "JavaScript 运行时",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://nodejs.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-13",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://nodejs.org/",
+            "kind": "official-site",
+            "note": "Node.js 自身主页展示项目名称；可能跳转到语言路径。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gitlab",
+      "canonicalName": "GitLab",
+      "description": "代码托管与协作平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://gitlab.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://about.gitlab.com/",
+            "kind": "official-cross-link",
+            "note": "GitLab 官方介绍页展示平台名称，并提供指向 gitlab.com 的登录与试用入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "stackoverflow",
+      "canonicalName": "Stack Overflow",
+      "description": "开发者问答社区",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://stackoverflow.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://stackoverflow.co/",
+            "kind": "official-cross-link",
+            "note": "Stack Overflow 企业站展示品牌，并在页脚明确链接 Stack Overflow 社区。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mdn",
+      "canonicalName": "MDN Web Docs",
+      "description": "Web 开发文档",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "MDN",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://developer.mozilla.org/en-US/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://developer.mozilla.org/en-US/",
+            "kind": "official-site",
+            "note": "Mozilla 的 MDN 主页展示 MDN Web Docs 名称和官方文档导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vscode",
+      "canonicalName": "Visual Studio Code",
+      "description": "代码编辑器",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "VS Code",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://code.visualstudio.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://code.visualstudio.com/",
+            "kind": "official-site",
+            "note": "Visual Studio Code 自身主页展示完整名称、VS Code 称呼和产品导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "docker",
+      "canonicalName": "Docker",
+      "description": "容器与开发工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.docker.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.docker.com/",
+            "kind": "official-site",
+            "note": "Docker 自身主页展示品牌名称与产品入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "npm",
+      "canonicalName": "npm",
+      "description": "JavaScript 软件包平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.npmjs.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://docs.npmjs.com/about-npm/",
+            "kind": "official-cross-link",
+            "note": "npm 官方 About 文档介绍 npm，并明确链接 npmjs.com 网站。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "typescript",
+      "canonicalName": "TypeScript",
+      "description": "编程语言",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.typescriptlang.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.typescriptlang.org/",
+            "kind": "official-site",
+            "note": "TypeScript 自身主页展示语言名称和文档导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "go",
+      "canonicalName": "Go",
+      "description": "编程语言",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://go.dev/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://go.dev/",
+            "kind": "official-site",
+            "note": "Go 自身主页展示 The Go Programming Language 和文档入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ubuntu",
+      "canonicalName": "Ubuntu",
+      "description": "Linux 操作系统",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://ubuntu.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://ubuntu.com/",
+            "kind": "official-site",
+            "note": "Ubuntu 自身主页展示品牌、发行版和下载导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "debian",
+      "canonicalName": "Debian",
+      "description": "Linux 操作系统",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.debian.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.debian.org/",
+            "kind": "official-site",
+            "note": "Debian 项目主页展示名称及操作系统介绍。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "archlinux",
+      "canonicalName": "Arch Linux",
+      "description": "Linux 操作系统",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://archlinux.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://archlinux.org/",
+            "kind": "official-site",
+            "note": "Arch Linux 项目主页展示名称、新闻与项目导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fedora",
+      "canonicalName": "Fedora",
+      "description": "Linux 操作系统",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://fedoraproject.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://fedoraproject.org/",
+            "kind": "official-site",
+            "note": "Fedora 项目主页展示 Fedora Linux 名称及发行版入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "libreoffice",
+      "canonicalName": "LibreOffice",
+      "description": "办公套件",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.libreoffice.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.libreoffice.org/",
+            "kind": "official-site",
+            "note": "LibreOffice 自身主页展示产品名称与办公套件介绍。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gimp",
+      "canonicalName": "GIMP",
+      "description": "图像编辑工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.gimp.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.gimp.org/",
+            "kind": "official-site",
+            "note": "GIMP 项目主页展示名称、软件介绍及项目导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "krita",
+      "canonicalName": "Krita",
+      "description": "数字绘画工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://krita.org/en/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://krita.org/en/",
+            "kind": "official-site",
+            "note": "Krita 自身主页展示绘画软件名称，并提供项目与下载导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "audacity",
+      "canonicalName": "Audacity",
+      "description": "音频编辑与录制工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.audacityteam.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.audacityteam.org/",
+            "kind": "official-site",
+            "note": "Audacity 自身主页展示产品名称与音频编辑介绍。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sevenzip",
+      "canonicalName": "7-Zip",
+      "description": "压缩与解压工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.7-zip.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.7-zip.org/",
+            "kind": "official-site",
+            "note": "7-Zip 自身主页展示软件名称、介绍和下载入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "keepass",
+      "canonicalName": "KeePass",
+      "description": "密码管理工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://keepass.info/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://keepass.info/",
+            "kind": "official-site",
+            "note": "KeePass Password Safe 项目主页展示产品名称及项目介绍。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wireshark",
+      "canonicalName": "Wireshark",
+      "description": "网络协议分析工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.wireshark.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.wireshark.org/",
+            "kind": "official-site",
+            "note": "Wireshark 自身主页展示名称及软件和学习入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "git",
+      "canonicalName": "Git",
+      "description": "版本控制工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://git-scm.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://git-scm.com/",
+            "kind": "official-site",
+            "note": "Git 项目主页展示名称、版本控制介绍及文档导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "curl",
+      "canonicalName": "curl",
+      "description": "网络传输工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://curl.se/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://curl.se/",
+            "kind": "official-site",
+            "note": "curl 项目主页展示名称、传输工具介绍及项目导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ffmpeg",
+      "canonicalName": "FFmpeg",
+      "description": "音视频处理工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://ffmpeg.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://ffmpeg.org/",
+            "kind": "official-site",
+            "note": "FFmpeg 项目主页展示名称与多媒体处理介绍。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "postgresql",
+      "canonicalName": "PostgreSQL",
+      "description": "关系数据库",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.postgresql.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.postgresql.org/",
+            "kind": "official-site",
+            "note": "PostgreSQL 项目主页展示数据库名称与官方导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sqlite",
+      "canonicalName": "SQLite",
+      "description": "嵌入式数据库",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://sqlite.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://sqlite.org/",
+            "kind": "official-site",
+            "note": "SQLite 项目主页展示数据库名称、介绍及文档导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "google",
+      "canonicalName": "Google",
+      "description": "搜索与互联网服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.google.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.google.com/",
+            "kind": "official-site",
+            "note": "Google 搜索主页展示 Google 名称；本次读取为地区语言页面。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "youtube",
+      "canonicalName": "YouTube",
+      "description": "视频平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.youtube.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://about.google/products/",
+            "kind": "official-cross-link",
+            "note": "Google 官方产品目录将 YouTube 链接到 www.youtube.com；YouTube 自身介绍页也展示名称及同域产品链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "discord",
+      "canonicalName": "Discord",
+      "description": "群组聊天与社区平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://discord.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://discord.com/",
+            "kind": "official-site",
+            "note": "Discord 自身主页展示平台名称与网页和客户端入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spotify",
+      "canonicalName": "Spotify",
+      "description": "音乐与播客平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://open.spotify.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.spotify.com/us/about-us/contact/",
+            "kind": "official-cross-link",
+            "note": "Spotify 自身介绍与联系页面展示品牌，页脚明确将 Web Player 链接到 open.spotify.com。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "notion",
+      "canonicalName": "Notion",
+      "description": "笔记与协作工作空间",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.notion.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.notion.com/",
+            "kind": "official-site",
+            "note": "Notion 自身主页展示名称和工作空间介绍。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "telegram",
+      "canonicalName": "Telegram",
+      "description": "即时通信平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://telegram.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://telegram.org/",
+            "kind": "official-site",
+            "note": "Telegram Messenger 自身主页展示名称、介绍与应用导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "signal",
+      "canonicalName": "Signal",
+      "description": "即时通信工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://signal.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://signal.org/",
+            "kind": "official-site",
+            "note": "Signal 自身主页展示名称与通信产品介绍。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "zoom",
+      "canonicalName": "Zoom",
+      "description": "视频会议与协作平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.zoom.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.zoom.com/",
+            "kind": "official-site",
+            "note": "Zoom 自身主页展示平台名称及会议协作导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "huggingface",
+      "canonicalName": "Hugging Face",
+      "description": "模型与数据协作社区",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://huggingface.co/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://huggingface.co/",
+            "kind": "official-site",
+            "note": "Hugging Face 自身主页展示社区名称及模型和数据导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vim",
+      "canonicalName": "Vim",
+      "description": "文本编辑器",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.vim.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-14",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.vim.org/",
+            "kind": "official-site",
+            "note": "Vim 项目主页展示名称、编辑器介绍与项目导航。"
+          }
+        ]
+      }
+    }
+  ]
+}

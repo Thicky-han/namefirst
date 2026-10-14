@@ -1,12 +1,17 @@
-# Environment files
+/dist/
+/release/
+/.cache/
+legal/private/
+*.log
 .env
-.env.local
-
-# Build outputs
-dist/
-
-# Dependencies
-node_modules/
-
-# Playwright
-test-results/
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+.DS_Store
+Thumbs.db
+Desktop.ini
+namefirst-memory-*.json
+namefirst-raw-recovery-*.json

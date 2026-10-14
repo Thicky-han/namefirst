@@ -1,0 +1,147 @@
+name: Bing
+homepage: https://github.com/ublacklist/builtin#readme
+lastModified: 2025-10-19T12:42:52Z
+
+pages:
+  - name: Web (desktop)
+    matches:
+      - https://www.bing.com/search?*
+      - https://www2.bing.com/search?*
+      - https://www4.bing.com/search?*
+      - https://cn.bing.com/search?*
+    userAgent: desktop
+    results:
+      - root: .b_algo
+        url:
+          - or
+          - - - regexExclude
+              - "^https:\\/\\/www\\.bing\\.com/ck/"
+              - [property, "href", "h2 > a"]
+            - [domainToURL, ".b_attribution"]
+        props:
+          title: h2
+    commonProps:
+      $site: bing
+      $category: web
+
+  - name: Web (mobile)
+    matches:
+      - https://www.bing.com/search?*
+      - https://www2.bing.com/search?*
+      - https://www4.bing.com/search?*
+      - https://cn.bing.com/search?*
+    userAgent: mobile
+    results:
+      - root: .b_algo
+        url: .b_algoheader > a
+        props:
+          title: h2
+    commonProps:
+      $site: bing
+      $category: web
+
+  - name: Images (desktop)
+    matches:
+      - https://www.bing.com/images/search?*
+      - https://www2.bing.com/images/search?*
+      - https://www4.bing.com/images/search?*
+      - https://cn.bing.com/images/search?*
+    userAgent: desktop
+    results:
+      - root: [upward, 1, ".iuscp"]
+        url:
+          - regexSubstitute
+          - '"purl":"([^"]+)'
+          - "\\1"
+          - [attribute, "m", ".iusc"]
+        props:
+          title: [attribute, "title", "li > a"]
+        button: [inset, { top: "4px", right: "36px" }, ".iuscp"]
+    commonProps:
+      $site: bing
+      $category: images
+
+  - name: Images (mobile)
+    matches:
+      - https://www.bing.com/images/search?*
+      - https://www2.bing.com/images/search?*
+      - https://www4.bing.com/images/search?*
+      - https://cn.bing.com/images/search?*
+    userAgent: mobile
+    results:
+      - root: [upward, 1, ".iuscp"]
+        url:
+          - regexSubstitute
+          - '"purl":"([^"]+)'
+          - "\\1"
+          - [attribute, "m", ".iusc"]
+        props:
+          title: [attribute, "title", "li > a"]
+    commonProps:
+      $site: bing
+      $category: images
+
+  - name: Videos (desktop)
+    matches:
+      - https://www.bing.com/videos/search?*
+      - https://www2.bing.com/videos/search?*
+      - https://www4.bing.com/videos/search?*
+      - https://cn.bing.com/videos/search?*
+    userAgent: desktop
+    results:
+      - root: [upward, 1, ".mc_vtvc"]
+        url: [attribute, "ourl", ".mc_vtvc_con_rc"]
+        props:
+          title: [attribute, "title", ".mc_vtvc_title"]
+        button: [inset, { top: "4px", right: "36px" }, ".mc_vtvc"]
+    commonProps:
+      $site: bing
+      $category: videos
+
+  - name: Videos (mobile)
+    matches:
+      - https://www.bing.com/videos/search?*
+      - https://www2.bing.com/videos/search?*
+      - https://www4.bing.com/videos/search?*
+      - https://cn.bing.com/videos/search?*
+    userAgent: mobile
+    results:
+      - root: [upward, 1, ".mc_vtvc"]
+        url: [attribute, "ourl", ".mc_vtvc_con_rc"]
+        props:
+          title: [attribute, "title", ".mc_vtvc_title"]
+    commonProps:
+      $site: bing
+      $category: videos
+
+  - name: News (desktop)
+    matches:
+      - https://www.bing.com/news/search?*
+      - https://www2.bing.com/news/search?*
+      - https://www4.bing.com/news/search?*
+      - https://cn.bing.com/news/search?*
+    userAgent: desktop
+    results:
+      - root: .news-card
+        url: .title
+        props:
+          title: .title
+    commonProps:
+      $site: bing
+      $category: news
+
+  - name: News (mobile)
+    matches:
+      - https://www.bing.com/news/search?*
+      - https://www2.bing.com/news/search?*
+      - https://www4.bing.com/news/search?*
+      - https://cn.bing.com/news/search?*
+    userAgent: mobile
+    results:
+      - root: .newscard
+        url: .title
+        props:
+          title: .title
+    commonProps:
+      $site: bing
+      $category: news

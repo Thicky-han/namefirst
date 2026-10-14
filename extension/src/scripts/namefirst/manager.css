@@ -1,0 +1,142 @@
+/* SPDX-License-Identifier: LicenseRef-NameFirst-NC-Reciprocal-1.0 */
+:root {
+  color-scheme: light dark;
+  font:
+    15px/1.6 system-ui,
+    sans-serif;
+  color: #20352b;
+  background: #f4f8f5;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 32px 20px 60px;
+}
+header h1 {
+  margin-bottom: 8px;
+}
+h2 {
+  margin-top: 0;
+  font-size: 21px;
+}
+h3 {
+  margin: 0 0 6px;
+}
+section {
+  background: white;
+  border: 1px solid #ccdacf;
+  padding: 24px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+label {
+  display: block;
+  margin: 12px 0;
+}
+input:not([type="checkbox"]),
+select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 5px;
+  padding: 9px;
+  border: 1px solid #9dbba6;
+  border-radius: 5px;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+}
+button {
+  padding: 8px 12px;
+  margin: 4px 8px 4px 0;
+  border: 1px solid #70977d;
+  border-radius: 6px;
+  color: inherit;
+  background: #e8f3ec;
+  font: inherit;
+  cursor: pointer;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+a {
+  color: #176c43;
+  overflow-wrap: anywhere;
+}
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+a:focus-visible {
+  outline: 2px solid #218858;
+  outline-offset: 3px;
+}
+article {
+  border-bottom: 1px solid #dce6df;
+  padding: 18px 0;
+  overflow-wrap: anywhere;
+}
+.toolbar {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+.toolbar label {
+  flex: 1;
+}
+.review {
+  color: #886118;
+}
+.check {
+  display: inline-block;
+  margin-right: 18px;
+}
+#status,
+#draft-status,
+#import-preview {
+  overflow-wrap: anywhere;
+}
+#import-preview {
+  margin: 12px 0;
+}
+nav {
+  margin: 12px 0;
+}
+[hidden] {
+  display: none !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #e0eee5;
+    background: #14231b;
+  }
+  section {
+    background: #1a2c22;
+    border-color: #496852;
+  }
+  button {
+    background: #2b4635;
+  }
+  a {
+    color: #9addb3;
+  }
+  .review {
+    color: #e6c16b;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    padding: 16px 12px;
+  }
+  section {
+    padding: 18px;
+  }
+  .toolbar {
+    display: block;
+  }
+}

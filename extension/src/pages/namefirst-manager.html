@@ -1,0 +1,121 @@
+<!doctype html>
+<!-- NameFirst original UI: LicenseRef-NameFirst-NC-Reciprocal-1.0 -->
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="color-scheme" content="light dark" />
+    <title>NameFirst · 个人记录</title>
+    <link rel="stylesheet" href="../scripts/namefirst-manager.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>个人记录与备份</h1>
+        <p>管理你明确记住的网站。全部保存在本浏览器，不改变已核实官网目录。</p>
+      </header>
+      <p id="status" role="status">正在读取本地记录…</p>
+      <section aria-labelledby="records-title">
+        <h2 id="records-title">个人目标</h2>
+        <div class="toolbar">
+          <label>搜索名称、别名或地址<input id="filter" type="search" /></label
+          ><button id="new-record" type="button">新增个人记录</button>
+        </div>
+        <p id="count"></p>
+        <div id="records"></div>
+        <nav aria-label="记录分页">
+          <button id="previous" type="button">上一页</button
+          ><span id="page"></span
+          ><button id="next" type="button">下一页</button>
+        </nav>
+      </section>
+      <section aria-labelledby="editor-title">
+        <h2 id="editor-title">新增或编辑</h2>
+        <p id="draft-status" role="status"></p>
+        <form id="editor">
+          <label
+            >记忆名称<input id="record-name" required maxlength="256" /></label
+          ><label
+            >个人别名（可选，逗号分隔）<input
+              id="record-aliases"
+              maxlength="2800" /></label
+          ><label
+            >目标 HTTPS 地址（不含参数或片段）<input
+              id="record-url"
+              required
+              maxlength="2048"
+              placeholder="https://example.com/" /></label
+          ><button id="save-record" type="submit">保存个人记录</button
+          ><button id="cancel-edit" type="button">取消编辑</button>
+        </form>
+      </section>
+      <section aria-labelledby="backup-title">
+        <h2 id="backup-title">备份与导入</h2>
+        <p>
+          JSON
+          备份包含个人名称、别名、网址及确认时间；不包含官网目录、开关或撤销历史。文件可能包含私人记录，请自行保管。
+        </p>
+        <button id="export" type="button">导出个人记录</button
+        ><button id="export-raw" type="button" hidden>
+          导出原始数据用于恢复
+        </button>
+        <label
+          >选择备份文件<input
+            id="import-file"
+            type="file"
+            accept=".json,application/json" /></label
+        ><label
+          >导入方式<select id="import-mode">
+            <option value="merge">合并：保留现有记录，跳过完全重复项</option>
+            <option value="replace">替换：用备份中的记录替换现有记录</option>
+          </select></label
+        >
+        <button id="preview-import" type="button">检查并预览导入</button>
+        <div id="import-preview" role="status"></div>
+        <label id="replace-label" hidden
+          ><input
+            id="confirm-replace"
+            type="checkbox"
+          />我确认用此文件替换现有个人记录</label
+        ><button id="apply-import" type="button" disabled>应用导入</button>
+      </section>
+      <section aria-labelledby="control-title">
+        <h2 id="control-title">展示与恢复</h2>
+        <label class="check"
+          ><input id="enabled" type="checkbox" disabled />启用 NameFirst</label
+        ><label class="check"
+          ><input id="bing-enabled" type="checkbox" disabled />在 Bing
+          中显示</label
+        ><label class="check"
+          ><input
+            id="baidu-enabled"
+            type="checkbox"
+            disabled
+          />在百度中显示</label
+        ><label class="check"
+          ><input
+            id="feedback-enabled"
+            type="checkbox"
+            disabled
+          />显示个人反馈入口</label
+        >
+        <p>
+          关闭某个引擎会恢复该引擎原有结果，保留记录。超过 180
+          天未确认只提示复核，不因一次网络失败删除记录。
+        </p>
+        <button id="undo" type="button" disabled>撤销最近记忆修改</button>
+        <details>
+          <summary>清空个人记忆</summary>
+          <p id="clear-count"></p>
+          <label
+            ><input
+              id="confirm-clear"
+              type="checkbox"
+            />确认清空全部个人记录（可撤销最近一次修改）</label
+          ><button id="clear" type="button" disabled>清空全部个人记录</button>
+        </details>
+      </section>
+    </main>
+    <script src="../scripts/namefirst-manager.js"></script>
+  </body>
+</html>

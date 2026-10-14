@@ -1,0 +1,110 @@
+name: DuckDuckGo
+homepage: https://github.com/ublacklist/builtin#readme
+lastModified: 2026-06-22T23:30:01Z
+
+pages:
+  - name: Default
+    matches:
+      - https://duckduckgo.com/
+      - https://duckduckgo.com/?*
+      - https://safe.duckduckgo.com/
+      - https://safe.duckduckgo.com/?*
+      - https://start.duckduckgo.com/
+      - https://start.duckduckgo.com/?*
+      - https://noai.duckduckgo.com/
+      - https://noai.duckduckgo.com/?*
+    delay: true
+    commonProps:
+      $site: duckduckgo
+    results:
+      - name: Web (desktop)
+        root:
+          - upward
+          - 1
+          - ':root:not(.is-mobile) [data-testid="web-vertical"] li > article'
+        url: h2 > a
+        props:
+          title: h2
+          $category: [const, "web"]
+        button: [inset, { top: "5.4px", right: "36px" }, "article"]
+
+      - name: Web (mobile)
+        root:
+          - upward
+          - 1
+          - ':root.is-mobile [data-testid="web-vertical"] li > article'
+        url: h2 > a
+        props:
+          title: h2
+          $category: [const, "web"]
+        button: [inset, { top: "10px", right: "36px" }, "article"]
+
+      - name: Web > Images
+        root: [upward, 2, '[data-layout="images"] li > a > img']
+        url: figcaption > a
+        props:
+          title: h3
+          $category: [const, "web"]
+
+      - name: Web > Videos
+        root: [upward, 2, '[data-layout="videos"] li > a > article']
+        url: a
+        props:
+          title: h3
+          $category: [const, "web"]
+
+      - name: Images
+        root: [upward, 1, '[data-testid="zci-images"] li > figure']
+        url: figcaption > a
+        props:
+          title: figcaption > a > p
+          $category: [const, "images"]
+
+      - name: Videos
+        root: [upward, 2, '[data-testid="zci-videos"] li > a > article']
+        url: a
+        props:
+          title: h2
+          $category: [const, "videos"]
+
+      - name: News
+        root: [upward, 1, '[data-testid="news-vertical"] li > article']
+        url: article > a
+        props:
+          title: h2
+          $category: [const, "news"]
+
+  - name: HTML
+    matches:
+      - https://html.duckduckgo.com/html/
+      - https://html.duckduckgo.com/html/?*
+    commonProps:
+      $site: duckduckgo
+      $category: web
+    results:
+      - name: Default
+        root: .result
+        url: .result__a
+        props:
+          # Use ".result__a" instead of ".result__title", which has preceding whitespaces.
+          title: .result__a
+
+  - name: Lite
+    matches:
+      - https://lite.duckduckgo.com/lite/
+      - https://lite.duckduckgo.com/lite/?*
+    commonProps:
+      $site: duckduckgo
+      $category: web
+    results:
+      - name: Default
+        root: tr:has(.result-link)
+        extraSelector: "& + tr, & + tr + tr, & + tr + tr + tr"
+        url: .result-link
+        props:
+          title: .result-link
+        button:
+          - text
+          - position: "afterend"
+            style: "display: inline; font-size: 72.269%; margin: 0 4px"
+          - ".result-link"
