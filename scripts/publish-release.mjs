@@ -15,7 +15,19 @@ function api(endpoint, body, method) {
   const args = ["api", endpoint];
   if (body !== undefined) args.push("--input", "-");
   if (method) args.push("--method", method);
-  const result = execFileSync("gh", args, { input: body === undefined ? undefined : JSON.stringify(body), encoding: "utf8", maxBuffer: 20_000_000 });
+  let result;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      result = execFileSync("gh", args, { input: body === undefined ? undefined : JSON.stringify(body), encoding: "utf8", maxBuffer: 20_000_000 });
+      break;
+    } catch (error) {
+      // A failed connection/handshake precedes sending the request. Do not
+      // automatically repeat arbitrary failures of mutating requests.
+      if (attempt === 3 || !/TLS handshake timeout|dial tcp|connection refused|network is unreachable/u.test(String(error.stderr ?? ""))) throw error;
+      console.log("Retrying GitHub connection before the request was sent.");
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 1000);
+    }
+  }
   return result.trim() ? JSON.parse(result) : null;
 }
 const identity = JSON.parse(await fs.readFile(path.join(root, "config/extension-identity.json"), "utf8"));
@@ -41,16 +53,16 @@ for (const asset of metadata.archives) {
   if (crypto.createHash("sha256").update(bytes).digest("hex") !== asset.sha256 || bytes.length !== asset.bytes) throw Error("Approved archive checksum changed.");
 }
 const tag = `v${identity.version}`;
+const parent = git("rev-parse", "HEAD^").trim();
 const priorReleases = api(`repos/${repository}/releases`);
 if (priorReleases.some(release => release.tag_name === tag)) throw Error("A release with this tag exists; inspect it before continuing.");
 const refs = api(`repos/${repository}/git/matching-refs/heads/main`);
-if (refs.some(ref => ref.ref === "refs/heads/main" && ref.object.sha !== commit)) throw Error("Remote main already differs; refusing to overwrite it.");
+if (refs.some(ref => ref.ref === "refs/heads/main" && ref.object.sha !== commit && ref.object.sha !== parent)) throw Error("Remote main is not the reviewed direct parent; refusing to overwrite it.");
 const tags = api(`repos/${repository}/git/matching-refs/tags/${tag}`);
 if (tags.some(ref => ref.ref === `refs/tags/${tag}` && ref.object.sha !== commit)) throw Error("The tag points to another commit.");
 
 // GitHub's Git object API is used when direct Git transport is unavailable.
 // Hashes must equal the local reviewed objects before any public ref is set.
-const parent = git("rev-parse", "HEAD^").trim();
 const baseline = api(`repos/${repository}/git/trees/${parent}?recursive=1`);
 if (baseline.truncated) throw Error("Incomplete remote baseline tree.");
 const knownBlobs = new Set(baseline.tree.filter(item => item.type === "blob").map(item => item.sha));
@@ -87,7 +99,9 @@ function person(kind) {
 if (headers.some(line => line.startsWith("gpgsig "))) throw Error("Signed commit transport requires a separate reviewed procedure.");
 const remoteCommit = api(`repos/${repository}/git/commits`, { message: rawCommit.slice(split + 2), tree: tree.sha, parents: [parent], author: person("author"), committer: person("committer") });
 if (remoteCommit.sha !== commit) throw Error("Uploaded commit hash differs; public main was not changed.");
-if (!refs.some(ref => ref.ref === "refs/heads/main")) api(`repos/${repository}/git/refs`, { ref: "refs/heads/main", sha: commit });
+const mainRef = refs.find(ref => ref.ref === "refs/heads/main");
+if (!mainRef) api(`repos/${repository}/git/refs`, { ref: "refs/heads/main", sha: commit });
+else if (mainRef.object.sha === parent) api(`repos/${repository}/git/refs/heads/main`, { sha: commit, force: false }, "PATCH");
 api(`repos/${repository}`, { default_branch: "main" }, "PATCH");
 if (!tags.some(ref => ref.ref === `refs/tags/${tag}`)) api(`repos/${repository}/git/refs`, { ref: `refs/tags/${tag}`, sha: commit });
 execFileSync("gh", ["release", "create", tag, "--repo", repository, "--draft", "--verify-tag", "--target", "main", "--title", `NameFirst ${identity.version}`, "--notes-file", path.join(root, "RELEASE_NOTES.md"), ...[...expectedFiles, "release-manifest.json", "SHA256SUMS.txt"].map(name => path.join(directory, name))], { cwd: root, stdio: "inherit" });

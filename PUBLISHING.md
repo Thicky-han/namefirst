@@ -1,16 +1,18 @@
-# NameFirst 首版发布流程
+# NameFirst 发行流程
 
-目标仓库为 [Thicky-han/namefirst](https://github.com/Thicky-han/namefirst)，公开、真正的 [iorate/ublacklist](https://github.com/iorate/ublacklist) fork。首版为 `1.0.0`，发布分支为 `main`。本地源码保留上游固定提交的真实祖先关系，并使用公开 GitHub 用户名与 noreply 邮箱提交；不公开私人身份或签署记录。
+目标：[Thicky-han/namefirst](https://github.com/Thicky-han/namefirst)，public，默认分支 main。v1.0.0 已发布；当前准备 v1.1.0，包含 118 个主体、173 个入口和重写的安装指引。当前准备状态见 [PRE_RELEASE_CHECK.md](./PRE_RELEASE_CHECK.md)，线上状态以 [Releases](https://github.com/Thicky-han/namefirst/releases)为准。
 
 ## 准备和确认边界
 
-发行前完成图标应用、README、源码与成品内容检查、构建、测试、打包和校验。详细范围见 [PRE_RELEASE_CHECK.md](./PRE_RELEASE_CHECK.md)。GitHub Actions 已关闭，未配置收费服务、定时任务或签署机器人。
+修改官网目录后，核对来源、日期、名称和下载用途，保留旧记录的真实核实日期。更新版本配置、README、INSTALL、CATALOG、RELEASE_NOTES、来源与验证记录，运行代码检查、单元和实际浏览器受控回归、成品解压加载、旧版更新及公开内容检查。
 
-创建 fork 不代表 NameFirst 首版已经发布。准备阶段远端保留继承的上游分支；只有维护者确认具体源码提交和发行文件后，才上传 `main`、设置默认分支、创建 `v1.0.0` 标签和发布 Release。是否已经发布，以 GitHub 实际分支及 [Releases](https://github.com/Thicky-han/namefirst/releases) 为准。
+先完成可审阅的本地提交和五个发行文件，再取得维护者对具体提交及附件的发布确认。确认前不更新远程 main、README、版本标签或 Release。不能把本地打包或无上传的准备检查称为已经公开发行。
+
+GitHub Actions 保持关闭，未配置服务器、付费服务、定时任务或自动签署服务。只使用公开 GitHub 用户名和 noreply 提交邮箱，不公开法定姓名、私下签署记录或用户备份。
 
 ## 本地构建和检查
 
-在项目根目录使用 PowerShell 7：
+使用 PowerShell 7，首次按 README 安装固定依赖。从已发布 main 开始工作，准备版本的最终本地提交直接继承当前已发布提交，核对完整可修改源码已经包含在该提交中，再在本地 main 打包：
 
 ```powershell
 ./scripts/Package.ps1
@@ -20,28 +22,34 @@ node scripts/check-public-content.mjs
 node scripts/check-release-content.mjs
 ```
 
-构建需要 Node.js 及 pnpm，首次先按 README 安装锁定依赖。先把完整可修改源码提交到本地 `main`，再打包，避免元数据指向旧提交。修改源码或发布正文后，需要重新提交、打包和验证。
+输出位于 release/1.1.0，包含 Chrome ZIP、Edge ZIP、完整对应源码 ZIP、release-manifest.json 和 SHA256SUMS.txt。版本来自 config/extension-identity.json。元数据记录源码提交、main 分支、稳定扩展 ID、目录版本和三个 ZIP 的摘要；校验清单另覆盖元数据。
 
-`release/1.0.0/` 中提供五个文件：Chrome ZIP、Edge ZIP、对应完整源码 ZIP、`release-manifest.json` 和 `SHA256SUMS.txt`。元数据记录源码提交、分支、稳定扩展 ID、目录版本和文件校验值。`publicReleaseCreated: false` 表示打包时尚未公开发行，不是 GitHub 当前状态查询。
+publicReleaseCreated: false 仅记录打包时尚未公开发行，不是查询 GitHub 当前状态。源码或发布正文有任何修改，都要重新提交、打包和校验，不手工修改 ZIP 来绕过内容对应检查。
 
-源码包包含固定上游源码、展开的 builtin、锁文件、构建材料、许可和测试；排除依赖、构建缓存、浏览器配置、个人备份、私钥和私下 CLA 记录。上游 `extension/release/` 内的脚本和说明属于源码，仍保留。消费者 ZIP 解压后的 `extension` 文件夹可直接加载，不需要编译。
+源码包保留上游基线、展开的 builtin、锁文件、源码和验证材料，排除依赖、缓存、浏览器配置、生成报告、个人备份、私钥及 legal/private。上游 extension/release 中的四个脚本/说明是源码，仍保留。
 
 ## 确认后的发布
 
-准备脚本 `scripts/publish-release.mjs` 默认只显示待发布信息，不上传。确认时应记录实际审核的完整提交哈希，执行：
+发布工具默认仅显示准备信息：
+
+```powershell
+node scripts/publish-release.mjs
+```
+
+收到明确发布确认后，用已确认提交的完整哈希执行：
 
 ```powershell
 node scripts/publish-release.mjs --confirm-public-release --expected-commit=<已确认的完整提交哈希>
 ```
 
-脚本要求干净的 `main`、正确仓库及与该提交一致的附件。通过 GitHub Git API 上传源码对象，逐项核对远端树和提交哈希等于本地已确认对象；随后创建 `main` 并设为默认分支，不覆盖已有不同提交，也不强推。此路径用于直接 Git 连接不可用的环境，保留真实 Git 提交和上游祖先关系。
+脚本要求干净的 main、正确目标、元数据与附件校验一致。通过 GitHub Git API 上传对象，核对树与提交哈希和本地一致；远程 main 必须是当前提交或它的直接父提交，更新使用 force: false，只允许正常向前推进。发现其他远端提交时停止检查，不覆盖或强推。
 
-随后建立指向该提交的 `v1.0.0` 标签，以 RELEASE_NOTES.md 为正文创建草稿，上传五个附件，核对附件名称、大小和 GitHub 返回的 SHA-256 后才公开发行。遇到已有标签、不同的远端 main 或同版本 Release，先检查，不自动覆盖。失败时保留可检查的状态，不能盲目重复执行。
+然后创建 v1.1.0 标签和 Release 草稿，使用 RELEASE_NOTES.md 正文，上传五个附件，核对 GitHub 返回的文件名、大小和 SHA-256 后才公开。已存在不同标签或同版本 Release 时先检查，不能盲目重试覆盖。仅在请求发送前的连接/TLS 失败时自动重试，不自动重复任意失败的写入。
 
-发布后检查 main、标签、正文和附件，确认未登录也能下载源码及安装包。根目录的主许可、上游 MIT、第三方声明、CLA 及贡献说明必须保留。普通下载和使用不需要签署 CLA；真实接收方及贡献者身份仅在双方私下签署记录中确认。
+发布后检查 public 可见性、默认 main、源码/标签提交与批准提交一致，未登录时 README 与五个附件均可访问、下载，下载内容与本地校验值一致。更新本地 origin/main 及版本标签记录；保留旧 v1.0.0 发行和附件。
 
-## 成本与维护
+## 许可与维护
 
-插件运行不需要维护者服务器、数据库、域名、付费 API 或云训练；用户下载、搜索和浏览网站需要网络。当前使用开发者模式安装，未发布到浏览器商店。
+保持公众主许可、上游 MIT、第三方署名和独立 CLA；普通下载及使用不签 CLA。法定主体与贡献授权在双方私下签署记录中确认，公开包只包含协议和空白模板。
 
-没有固定服务成本仍需要人工维护：搜索页面变化、浏览器变化和官网目录过期需要核查并发布更新。不能为发布新版本凭空刷新官网核实日期。
+本次不新增后台爬站、在线认证、账号、遥测、云同步或付费服务。插件运行无维护者服务器或 API 账单；搜索页面变化与目录过期仍需要人工维护。不能因更新版本而凭空刷新原有官网核实日期。

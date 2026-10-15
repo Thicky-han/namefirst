@@ -166,6 +166,34 @@ test("release catalog recalls new exact names and verified aliases without perso
   }
 });
 
+test("student names and official downloads are first on an otherwise unrelated result page", async ({
+  searchPage: page,
+  engine,
+}) => {
+  for (const [query, url] of [
+    ["可画", "https://www.canva.cn/zh_cn/"],
+    ["Canva可画下载", "https://www.canva.cn/download/windows/"],
+    ["中国大学MOOC", "https://www.icourse163.org/"],
+    ["知网", "https://www.cnki.net/"],
+    ["腾讯会议下载", "https://meeting.tencent.com/download/"],
+    ["Zotero下载", "https://www.zotero.org/download/"],
+    ["RStudio下载", "https://docs.posit.co/ide/user/download.html"],
+    ["DeepL下载", "https://www.deepl.com/en/windows-app"],
+    ["DeepSeek网页版", "https://chat.deepseek.com/"],
+    ["Visual Studio下载", "https://visualstudio.microsoft.com/downloads/"],
+  ]) {
+    await page.goto(href(engine, query!));
+    const card = page.locator("[data-namefirst-card]");
+    await expect(card).toHaveCount(1);
+    await expect(card).toContainText("已核实官方入口");
+    await expect(card.locator("h2 a")).toHaveAttribute("href", url!);
+    await expect(
+      page.locator(`${engine.container} > :first-child`),
+    ).toHaveAttribute("data-namefirst-card", "");
+    await expect(page.locator("#original")).toBeVisible();
+  }
+});
+
 test("URL query wins over unsubmitted input, SPA navigation and back navigation update cards", async ({
   searchPage: page,
   engine,

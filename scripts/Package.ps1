@@ -15,7 +15,8 @@ $expectedRelease = [IO.Path]::GetFullPath((Join-Path $projectRoot 'release')) + 
 if (-not $releaseRoot.StartsWith($expectedRelease, [StringComparison]::OrdinalIgnoreCase)) { throw 'Release path escaped its root.' }
 New-Item -ItemType Directory -Path $releaseRoot -Force | Out-Null
 Add-Type -AssemblyName System.IO.Compression
-$fixedTime = [DateTimeOffset]::Parse('2026-10-14T00:00:00+00:00')
+$catalogDate = (Get-Content -LiteralPath (Join-Path $projectRoot 'extension/src/scripts/namefirst/catalog.json') -Raw | ConvertFrom-Json).updatedAt
+$fixedTime = [DateTimeOffset]::ParseExact("${catalogDate}T00:00:00+00:00", "yyyy-MM-dd'T'HH:mm:sszzz", [Globalization.CultureInfo]::InvariantCulture)
 
 function Write-Archive([string]$Destination, [object[]]$Files) {
     $seen = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)

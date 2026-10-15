@@ -25,10 +25,7 @@ export default defineConfig({
       "json",
       {
         outputFile: fileURLToPath(
-          new URL(
-            "../../../.cache/stage6-browser-report.json",
-            import.meta.url,
-          ),
+          new URL("../../../.cache/1.1.0-browser-report.json", import.meta.url),
         ),
       },
     ],

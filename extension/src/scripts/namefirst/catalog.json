@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026.10.14.1",
-  "updatedAt": "2026-10-14",
+  "version": "2026.10.15.1",
+  "updatedAt": "2026-10-15",
   "materialLicense": "LicenseRef-NameFirst-NC-Reciprocal-1.0",
   "platforms": [
     {
@@ -1760,6 +1760,3028 @@
             "url": "https://www.vim.org/",
             "kind": "official-site",
             "note": "Vim 项目主页展示名称、编辑器介绍与项目导航。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chsi",
+      "canonicalName": "学信网",
+      "description": "学籍、学历与学位信息服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "中国高等教育学生信息网",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.chsi.com.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.chsi.com.cn/",
+            "kind": "official-site",
+            "note": "学信网首页显示中国高等教育学生信息网（学信网），并提供学籍、学历和学位服务；通过官方页面核对名称与主域。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chsi-yz",
+      "canonicalName": "中国研究生招生信息网",
+      "description": "研究生招生、报名与调剂信息",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "研招网",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://yz.chsi.com.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://yz.chsi.com.cn/",
+            "kind": "official-site",
+            "note": "教育部学生服务与素质发展中心主办的研招页面展示中国研究生招生信息网名称，并提供报名、调剂及学信网交叉链接。"
+          },
+          {
+            "id": "chsi-link",
+            "url": "https://www.chsi.com.cn/",
+            "kind": "official-cross-link",
+            "note": "学信网官方首页明确链接研招网与国家大学生就业服务平台，交叉确认该目标的名称与主域。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "neea",
+      "canonicalName": "中国教育考试网",
+      "description": "教育考试信息、报名与成绩服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.neea.edu.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.neea.edu.cn/",
+            "kind": "official-site",
+            "note": "教育考试院网站展示中国教育考试网名称、考试报名与成绩查询服务，保留其官方主域。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ncss",
+      "canonicalName": "国家大学生就业服务平台",
+      "description": "高校毕业生就业信息与服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.ncss.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.ncss.cn/",
+            "kind": "official-site",
+            "note": "平台首页显示国家大学生就业服务平台名称；另由学信网首页的就业栏目交叉链接至此主域。"
+          },
+          {
+            "id": "chsi-link",
+            "url": "https://www.chsi.com.cn/",
+            "kind": "official-cross-link",
+            "note": "学信网官方首页明确链接研招网与国家大学生就业服务平台，交叉确认该目标的名称与主域。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "icourse163",
+      "canonicalName": "中国大学MOOC",
+      "description": "大学在线课程与学习平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.icourse163.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.icourse163.org/",
+            "kind": "official-site",
+            "note": "网站显示中国大学MOOC名称，并说明由高教社与网易推出；此处只收录课程平台主页。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "xuetangx",
+      "canonicalName": "学堂在线",
+      "description": "在线课程与学习平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.xuetangx.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.xuetangx.com/",
+            "kind": "official-site",
+            "note": "读取平台首页的中文页面标题学堂在线及课程学习介绍；保留其自有主域，不把学校课程页面作为通用首页。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chaoxing",
+      "canonicalName": "学习通",
+      "description": "超星课程学习与教学工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "超星学习通",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://app.chaoxing.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://apps.chaoxing.com/s",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://app.chaoxing.com/",
+            "kind": "official-site",
+            "note": "超星自有域名页面显示学习通名称；下载页提供客户端与浏览器打开指引。"
+          },
+          {
+            "id": "download",
+            "url": "https://apps.chaoxing.com/s",
+            "kind": "official-site",
+            "note": "学习通 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "yuketang",
+      "canonicalName": "雨课堂",
+      "description": "课堂教学与学习互动工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.yuketang.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.yuketang.cn/",
+            "kind": "official-site",
+            "note": "雨课堂主页展示智慧教学产品名称和教学服务，按其自有域名收录。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "zhihuishu",
+      "canonicalName": "智慧树",
+      "description": "在线课程与教学服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "智慧树网",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.zhihuishu.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.zhihuishu.com/",
+            "kind": "official-site",
+            "note": "官方页面以智慧树网为名提供在线课程与教学服务，收录智慧树和智慧树网两种名称。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cnki",
+      "canonicalName": "中国知网",
+      "description": "中文学术文献与知识服务",
+      "nameEvidenceIds": ["library-guide", "brand"],
+      "aliases": [
+        {
+          "name": "CNKI",
+          "evidenceIds": ["library-guide", "brand"]
+        },
+        {
+          "name": "知网",
+          "evidenceIds": ["library-guide", "brand"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.cnki.net/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["library-guide", "brand"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "library-guide",
+            "url": "https://lib.ytkj.edu.cn/info/1081/3742.htm",
+            "kind": "official-cross-link",
+            "note": "烟台科技学院图书馆的知网使用手册明确列出中国知网官方网站 https://www.cnki.net/；本次用于交叉确认首页，非账号或访问权限承诺。"
+          },
+          {
+            "id": "brand",
+            "url": "https://cx.cnki.net/main.html",
+            "kind": "official-site",
+            "note": "知网自有服务页使用中国知网（CNKI）名称；仅用于核实名称，不将查重子站当成通用文献首页。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wanfang",
+      "canonicalName": "万方数据",
+      "description": "学术文献与知识服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.wanfangdata.com.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.wanfangdata.com.cn/",
+            "kind": "official-site",
+            "note": "万方数据知识服务平台页面显示产品名称及机构、文献服务入口，保留官方主域。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cqvip",
+      "canonicalName": "维普",
+      "description": "中文期刊与学术文献服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "维普网",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.cqvip.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.cqvip.com/",
+            "kind": "official-site",
+            "note": "维普网主页展示维普品牌及学术文献产品；此入口为平台主页，不把论文检测广告页当通用检索入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "google-scholar",
+      "canonicalName": "Google Scholar",
+      "description": "学术文献搜索",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://scholar.google.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://scholar.google.com/",
+            "kind": "official-site",
+            "note": "Google Scholar 自有域名主页及 Google 的产品说明明确提供学术文献搜索；只核实服务身份，不保证各地网络可达。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "semantic-scholar",
+      "canonicalName": "Semantic Scholar",
+      "description": "学术论文发现与检索",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.semanticscholar.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://webflow.semanticscholar.org/about",
+            "kind": "official-site",
+            "note": "Semantic Scholar 的官方 About 页说明其 Ai2 学术检索服务，并交叉链接 www.semanticscholar.org；主站本次部分请求被拒绝，不据此承诺网络可达。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pubmed",
+      "canonicalName": "PubMed",
+      "description": "生物医学文献检索",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/",
+            "kind": "official-site",
+            "note": "NCBI 自有域名 PubMed 页面介绍其生物医学文献检索服务，按该服务的独立入口收录。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "arxiv",
+      "canonicalName": "arXiv",
+      "description": "科研预印本平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://arxiv.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://arxiv.org/",
+            "kind": "official-site",
+            "note": "arXiv 自有域名首页说明预印本与开放论文服务，并给出其平台名称。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "web-of-science",
+      "canonicalName": "Web of Science",
+      "description": "学术引文与文献检索",
+      "nameEvidenceIds": ["publisher", "direct-links"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.webofscience.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["publisher", "direct-links"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "publisher",
+            "url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/wos-researcher-profiles/",
+            "kind": "official-site",
+            "note": "Clarivate 官方 Web of Science 产品资料将账号服务指向 webofscience.com；用于确认产品与主域。"
+          },
+          {
+            "id": "direct-links",
+            "url": "https://support.clarivate.com/ScientificandAcademicResearch/s/article/Web-of-Science-Direct-links-and-URLs-to-go-directly-to-a-specific-database",
+            "kind": "official-cross-link",
+            "note": "Clarivate 官方支持文章列出 www.webofscience.com 的检索地址；机构订阅与登录条件由该站处理。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "zotero",
+      "canonicalName": "Zotero",
+      "description": "文献收藏、管理与引用",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.zotero.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.zotero.org/download/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.zotero.org/",
+            "kind": "official-site",
+            "note": "Zotero 主页与官方 Download 页面相互关联，下载页列出各系统安装包和浏览器 Connector。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.zotero.org/download/",
+            "kind": "official-site",
+            "note": "Zotero 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "endnote",
+      "canonicalName": "EndNote",
+      "description": "文献管理与引用工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://endnote.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://endnote.com/downloads/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://endnote.com/downloads/",
+            "kind": "official-cross-link",
+            "note": "EndNote 官方 Downloads 页面显示产品名称、官方主页及引用工具，确认官网与下载域名；本次根首页部分请求返回访问限制，不作可达性承诺。"
+          },
+          {
+            "id": "download",
+            "url": "https://endnote.com/downloads/",
+            "kind": "official-site",
+            "note": "EndNote 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "overleaf",
+      "canonicalName": "Overleaf",
+      "description": "在线 LaTeX 论文编辑与协作",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.overleaf.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.overleaf.com/",
+            "kind": "official-site",
+            "note": "Overleaf 官网明确说明在线 LaTeX 编辑与协作服务，不将模板或第三方部署作为官网。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "obsidian",
+      "canonicalName": "Obsidian",
+      "description": "本地笔记与知识管理",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://obsidian.md/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://obsidian.md/download",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://obsidian.md/",
+            "kind": "official-site",
+            "note": "Obsidian 主页链接自己的下载页，下载页按操作系统提供官方分发入口。"
+          },
+          {
+            "id": "download",
+            "url": "https://obsidian.md/download",
+            "kind": "official-site",
+            "note": "Obsidian 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "typora",
+      "canonicalName": "Typora",
+      "description": "Markdown 编辑器",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://typora.io/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://typora.io/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://typora.io/",
+            "kind": "official-site",
+            "note": "Typora 主页同时提供编辑器介绍及各操作系统下载链接；官网与下载共用此稳定页面。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wps",
+      "canonicalName": "WPS Office",
+      "description": "文档、表格与演示办公套件",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "WPS",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.wps.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.wps.cn/",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.wps.cn/",
+            "kind": "official-site",
+            "note": "WPS 官网页面标题、品牌与下载功能明确；同一官网同时承担介绍和客户端下载，未收录第三方下载站。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "microsoft-365",
+      "canonicalName": "Microsoft 365",
+      "description": "微软办公应用与服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.microsoft.com/microsoft-365",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载与安装说明",
+          "url": "https://www.microsoft.com/microsoft-365/download-office",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.microsoft.com/microsoft-365",
+            "kind": "official-site",
+            "note": "微软 Microsoft 365 产品页显示独立产品名称，官方下载说明位于同一微软域名；不把 Word、Excel 等全部视作其名称别名。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.microsoft.com/microsoft-365/download-office",
+            "kind": "official-site",
+            "note": "Microsoft 365 的官方官方下载与安装说明页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tencent-docs",
+      "canonicalName": "腾讯文档",
+      "description": "在线文档与多人协作",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://docs.qq.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://docs.qq.com/desktop",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://docs.qq.com/",
+            "kind": "official-site",
+            "note": "腾讯文档主页标题明确标注官方网站，并链接 docs.qq.com/desktop 桌面客户端入口。"
+          },
+          {
+            "id": "download",
+            "url": "https://docs.qq.com/desktop",
+            "kind": "official-site",
+            "note": "腾讯文档 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kdocs",
+      "canonicalName": "金山文档",
+      "description": "在线文档与多人协作",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.kdocs.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.kdocs.cn/",
+            "kind": "official-site",
+            "note": "金山文档主页转到自有 account.kdocs.cn 登录入口，页面显示金山文档；WPS 官网部署的产品脚本亦链接 www.kdocs.cn。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tencent-meeting",
+      "canonicalName": "腾讯会议",
+      "description": "视频会议与在线协作",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://meeting.tencent.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://meeting.tencent.com/download/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://meeting.tencent.com/",
+            "kind": "official-site",
+            "note": "腾讯会议主页与官方 Download 页面提供产品介绍及不同平台的客户端下载。"
+          },
+          {
+            "id": "download",
+            "url": "https://meeting.tencent.com/download/",
+            "kind": "official-site",
+            "note": "腾讯会议 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "feishu",
+      "canonicalName": "飞书",
+      "description": "办公、会议与文档协作",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.feishu.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.feishu.cn/download",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.feishu.cn/",
+            "kind": "official-site",
+            "note": "飞书中文主页标题确认品牌与厂商，独立下载页标明飞书客户端；地区重定向不作为新域名猜测依据。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.feishu.cn/download",
+            "kind": "official-site",
+            "note": "飞书 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dingtalk",
+      "canonicalName": "钉钉",
+      "description": "组织沟通与办公协作",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.dingtalk.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.dingtalk.com/download",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.dingtalk.com/",
+            "kind": "official-site",
+            "note": "钉钉自有域名主页及官网下载页显示产品名称与下载用途；只保存稳定页面，不保存安装包临时链接。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.dingtalk.com/download",
+            "kind": "official-site",
+            "note": "钉钉 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jetbrains-toolbox",
+      "canonicalName": "JetBrains Toolbox App",
+      "description": "JetBrains 开发工具安装与管理",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "JetBrains Toolbox",
+          "evidenceIds": ["primary"]
+        },
+        {
+          "name": "Toolbox App",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.jetbrains.com/toolbox-app/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.jetbrains.com/toolbox-app/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.jetbrains.com/toolbox-app/",
+            "kind": "official-site",
+            "note": "JetBrains 产品页正式展示 Toolbox App 名称与工具管理用途；此目标只覆盖 Toolbox App，不代表已收录全部 JetBrains IDE。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "visual-studio",
+      "canonicalName": "Visual Studio",
+      "description": "C++、.NET 等应用开发环境",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://visualstudio.microsoft.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://visualstudio.microsoft.com/downloads/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://visualstudio.microsoft.com/",
+            "kind": "official-site",
+            "note": "微软独立 Visual Studio 主页与 Downloads 页面显示产品名称及开发环境下载；与 Visual Studio Code 分开收录。"
+          },
+          {
+            "id": "download",
+            "url": "https://visualstudio.microsoft.com/downloads/",
+            "kind": "official-site",
+            "note": "Visual Studio 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "anaconda",
+      "canonicalName": "Anaconda",
+      "description": "Python 与数据科学工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "Anaconda Distribution",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.anaconda.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.anaconda.com/download",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.anaconda.com/",
+            "kind": "official-site",
+            "note": "Anaconda 自有主页与 Distribution 下载页面显示厂商、产品名称及分发用途；下载和授权按厂商页面执行。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.anaconda.com/download",
+            "kind": "official-site",
+            "note": "Anaconda 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jupyter",
+      "canonicalName": "Jupyter",
+      "description": "交互式计算与 Notebook 工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://jupyter.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方安装指南",
+          "url": "https://jupyter.org/install",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://jupyter.org/",
+            "kind": "official-site",
+            "note": "Project Jupyter 主页链接官方安装指南，指南给出 JupyterLab、Notebook 等安装方法；下载入口在此指官方安装说明。"
+          },
+          {
+            "id": "download",
+            "url": "https://jupyter.org/install",
+            "kind": "official-site",
+            "note": "Jupyter 的官方官方安装指南页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "r-project",
+      "canonicalName": "R",
+      "description": "统计计算与绘图语言",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.r-project.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://cran.r-project.org/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.r-project.org/",
+            "kind": "official-site",
+            "note": "R Project 主页将 CRAN 列为下载来源；保留官方 CRAN 主站，不随意选择第三方软件站或镜像。"
+          },
+          {
+            "id": "download",
+            "url": "https://cran.r-project.org/",
+            "kind": "official-site",
+            "note": "R 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rstudio",
+      "canonicalName": "RStudio",
+      "description": "R 与 Python 数据分析开发环境",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "RStudio Desktop",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://posit.co/products/open-source/rstudio/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方桌面版下载",
+          "url": "https://docs.posit.co/ide/user/download.html",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://posit.co/products/open-source/rstudio/",
+            "kind": "official-site",
+            "note": "Posit 官方产品页及 RStudio 用户指南明确显示 RStudio / RStudio Desktop，使用指南中的 Download RStudio 具体页面替代已重定向的旧地址。"
+          },
+          {
+            "id": "download",
+            "url": "https://docs.posit.co/ide/user/download.html",
+            "kind": "official-site",
+            "note": "Posit 官方 RStudio 用户指南中的 Download RStudio 页面列出桌面安装包；替代只会转到文档首页的旧地址。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mysql",
+      "canonicalName": "MySQL",
+      "description": "关系型数据库",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.mysql.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://dev.mysql.com/downloads/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.mysql.com/",
+            "kind": "official-site",
+            "note": "MySQL 官网与官方 Developer Zone Community Downloads 互相链接，下载页明确列出 MySQL 各组件。"
+          },
+          {
+            "id": "download",
+            "url": "https://dev.mysql.com/downloads/",
+            "kind": "official-site",
+            "note": "MySQL 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dbeaver",
+      "canonicalName": "DBeaver",
+      "description": "数据库管理工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "DBeaver Community",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://dbeaver.io/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://dbeaver.io/download/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://dbeaver.io/",
+            "kind": "official-site",
+            "note": "DBeaver Community 自有主页和 Download 页面明确社区版产品与安装包；不把独立商业产品地址替代此社区版。"
+          },
+          {
+            "id": "download",
+            "url": "https://dbeaver.io/download/",
+            "kind": "official-site",
+            "note": "DBeaver 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "postman",
+      "canonicalName": "Postman",
+      "description": "API 开发与调试工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.postman.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.postman.com/downloads/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.postman.com/",
+            "kind": "official-site",
+            "note": "Postman 官方主页与 Downloads 页面显示 API 工具品牌，下载页同时提供桌面应用及其他工具。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.postman.com/downloads/",
+            "kind": "official-site",
+            "note": "Postman 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "matlab",
+      "canonicalName": "MATLAB",
+      "description": "数值计算、编程与建模工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.mathworks.com/products/matlab.html",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.mathworks.com/downloads/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download", "support"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.mathworks.com/products/matlab.html",
+            "kind": "official-site",
+            "note": "MathWorks 产品页展示 MATLAB 名称；另由 MathWorks Support Team 的下载说明核对官方 downloads 入口，下载可能要求账号和许可。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.mathworks.com/downloads/",
+            "kind": "official-site",
+            "note": "MathWorks 官方下载入口；Support Team 的下载说明明确使用此地址，实际使用可能需账号与许可。"
+          },
+          {
+            "id": "support",
+            "url": "https://www.mathworks.com/matlabcentral/answers/101103-how-do-i-download-a-matlab-iso-or-dmg-archive",
+            "kind": "official-cross-link",
+            "note": "MathWorks Support Article 指明 MATLAB 的官方 downloads 入口，并说明许可管理员与账号要求。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "originlab",
+      "canonicalName": "Origin",
+      "description": "Origin / OriginPro 数据分析与科研绘图",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "OriginPro",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.originlab.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方试用与下载",
+          "url": "https://www.originlab.com/demodownload.aspx",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.originlab.com/",
+            "kind": "official-site",
+            "note": "OriginLab 官网明确同时展示 Origin 与 OriginPro，二者在本条目作为同厂商产品系列共享入口；下载页为官方试用申请与下载。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.originlab.com/demodownload.aspx",
+            "kind": "official-site",
+            "note": "Origin 的官方官方试用与下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spss",
+      "canonicalName": "IBM SPSS Statistics",
+      "description": "统计分析软件",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "SPSS Statistics",
+          "evidenceIds": ["primary"]
+        },
+        {
+          "name": "SPSS",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.ibm.com/products/spss-statistics",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方试用与下载说明",
+          "url": "https://www.ibm.com/products/spss-statistics",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.ibm.com/products/spss-statistics",
+            "kind": "official-site",
+            "note": "IBM 产品页正式使用 IBM SPSS Statistics、SPSS Statistics 与 SPSS 表述，并提供试用入口；不承诺免账号或免费完整版。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "autocad",
+      "canonicalName": "AutoCAD",
+      "description": "二维绘图与三维 CAD 工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.autodesk.com/products/autocad/overview.htm",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方试用下载",
+          "url": "https://www.autodesk.com/products/autocad/free-trial",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.autodesk.com/products/autocad/overview.htm",
+            "kind": "official-site",
+            "note": "Autodesk 产品页与 AutoCAD Free Trial 页面核对产品名称及官方试用下载；不收录破解或第三方安装器。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.autodesk.com/products/autocad/free-trial",
+            "kind": "official-site",
+            "note": "AutoCAD 的官方官方试用下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "solidworks",
+      "canonicalName": "SOLIDWORKS",
+      "description": "三维 CAD 与产品设计软件",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.solidworks.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.solidworks.com/support/community-download",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.solidworks.com/",
+            "kind": "official-site",
+            "note": "SOLIDWORKS 官方网站和 Community Download 页面核对三维 CAD 产品与官方分发服务，实际下载资格由站点决定。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.solidworks.com/support/community-download",
+            "kind": "official-site",
+            "note": "SOLIDWORKS 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ansys",
+      "canonicalName": "Ansys",
+      "description": "工程仿真软件",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.ansys.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方学生版下载",
+          "url": "https://www.ansys.com/academic/students",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.ansys.com/",
+            "kind": "official-site",
+            "note": "Ansys 官网当前重定向至 Synopsys 的 Ansys 站点；学生软件页面明确提供官方 Student 下载，单独标注学生版。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.ansys.com/academic/students",
+            "kind": "official-site",
+            "note": "Ansys 的官方官方学生版下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comsol",
+      "canonicalName": "COMSOL",
+      "description": "多物理场建模与仿真",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.comsol.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方产品下载（需相应许可）",
+          "url": "https://www.comsol.com/product-download",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.comsol.com/",
+            "kind": "official-site",
+            "note": "COMSOL 主页链接 Product Download 页面，页面说明 COMSOL Access 账号和相应许可要求。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.comsol.com/product-download",
+            "kind": "official-site",
+            "note": "COMSOL 的官方官方产品下载（需相应许可）页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "adobe-creative-cloud",
+      "canonicalName": "Adobe Creative Cloud",
+      "description": "Adobe 创意应用与服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "Creative Cloud",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.adobe.com/creativecloud.html",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.adobe.com/download/creative-cloud",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.adobe.com/creativecloud.html",
+            "kind": "official-site",
+            "note": "Adobe 产品页说明 Creative Cloud 应用与服务，旧下载链接重定向到 Adobe 自有 download/creative-cloud 页面；不把 Photoshop 等独立产品名称当本条别名。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.adobe.com/download/creative-cloud",
+            "kind": "official-site",
+            "note": "Adobe Creative Cloud 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "figma",
+      "canonicalName": "Figma",
+      "description": "界面设计与协作工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.figma.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.figma.com/downloads/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.figma.com/",
+            "kind": "official-site",
+            "note": "Figma 自有主页及 Downloads 页面确认产品品牌和桌面、移动应用下载。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.figma.com/downloads/",
+            "kind": "official-site",
+            "note": "Figma 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "canva-cn",
+      "canonicalName": "Canva 可画",
+      "description": "中国区在线设计与演示工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "可画",
+          "evidenceIds": ["primary"]
+        },
+        {
+          "name": "Canva",
+          "evidenceIds": ["primary"]
+        },
+        {
+          "name": "Canva可画",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.canva.cn/zh_cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "Windows 官方下载",
+          "url": "https://www.canva.cn/download/windows/",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.canva.cn/zh_cn/",
+            "kind": "official-site",
+            "note": "Canva 中国区中文主页明确使用 Canva可画、可画品牌，收录相同名称的空格排版形式；Windows 下载页与中国区主站同域。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.canva.cn/download/windows/",
+            "kind": "official-site",
+            "note": "Canva 可画 的官方Windows 官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jianying",
+      "canonicalName": "剪映",
+      "description": "视频剪辑与创作工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "剪映专业版",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.capcut.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.capcut.cn/",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.capcut.cn/",
+            "kind": "official-site",
+            "note": "剪映官网展示剪映 AI、电脑端专业版与立即下载；剪映专业版指向同一官方产品入口，不把海外 CapCut 名称混入。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "davinci-resolve",
+      "canonicalName": "DaVinci Resolve",
+      "description": "视频剪辑、调色与后期制作",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+            "kind": "official-site",
+            "note": "Blackmagic Design 官方 DaVinci Resolve 产品页提供产品介绍与下载选择；主页与下载共用此官方页面。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unity",
+      "canonicalName": "Unity",
+      "description": "游戏与实时三维开发工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://unity.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "Unity Hub 官方下载",
+          "url": "https://unity.com/download",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": ["Unity Hub"],
+          "evidenceIds": ["download", "install-guide"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://unity.com/",
+            "kind": "official-site",
+            "note": "Unity 官方主页及官方安装文档将 Unity Hub 下载指向 unity.com/download；Unity Hub 为本条的安装管理入口，不是任意第三方包。"
+          },
+          {
+            "id": "download",
+            "url": "https://unity.com/download",
+            "kind": "official-site",
+            "note": "Unity 的官方Unity Hub 官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          },
+          {
+            "id": "install-guide",
+            "url": "https://docs.unity.com/en-us/hub/install-hub",
+            "kind": "official-cross-link",
+            "note": "Unity 官方 Hub 安装说明交叉链接下载页面，说明使用 Unity Hub 安装与管理编辑器。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unreal-engine",
+      "canonicalName": "Unreal Engine",
+      "description": "游戏与实时三维创作引擎",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "虚幻引擎",
+          "evidenceIds": ["chinese"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.unrealengine.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.unrealengine.com/download",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.unrealengine.com/",
+            "kind": "official-site",
+            "note": "Unreal Engine 官网的中文页面使用虚幻引擎名称，官方下载页提供获取引擎的说明。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.unrealengine.com/download",
+            "kind": "official-site",
+            "note": "Unreal Engine 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          },
+          {
+            "id": "chinese",
+            "url": "https://www.unrealengine.com/zh-CN/",
+            "kind": "official-site",
+            "note": "Epic 的 Unreal Engine 中文官网明确使用虚幻引擎名称。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "deepseek",
+      "canonicalName": "DeepSeek",
+      "description": "深度求索 AI 服务",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "深度求索",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.deepseek.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "chat",
+          "label": "官方网页版",
+          "url": "https://chat.deepseek.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": ["DeepSeek 网页版", "DeepSeek网页版"],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.deepseek.com/",
+            "kind": "official-site",
+            "note": "深度求索官网显示 DeepSeek 与深度求索名称，并明确链接 chat.deepseek.com 网页版；不把 API 服务地址作为普通聊天入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "doubao",
+      "canonicalName": "豆包",
+      "description": "AI 智能助手",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.doubao.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.doubao.com/",
+            "kind": "official-site",
+            "note": "豆包自有站点页面标明字节跳动旗下 AI 助手；保存官方网页版入口，不据此为其生成独立安装包地址。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kimi",
+      "canonicalName": "Kimi",
+      "description": "AI 智能助手",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.kimi.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.kimi.com/",
+            "kind": "official-site",
+            "note": "Kimi 自有站点显示 AI 助手品牌与对话界面，保留当前官方主域。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qianwen",
+      "canonicalName": "千问",
+      "description": "阿里 AI 助手",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.qianwen.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.qianwen.com/",
+            "kind": "official-site",
+            "note": "千问自有页面明确标注阿里旗下 AI 助手；不将 Qwen 模型名称自动视作该网页服务的别名。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "deepl",
+      "canonicalName": "DeepL",
+      "description": "翻译工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.deepl.com/translator",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "Windows 官方下载",
+          "url": "https://www.deepl.com/en/windows-app",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.deepl.com/translator",
+            "kind": "official-site",
+            "note": "DeepL 官方翻译页面链接 Windows 应用页；旧 app 地址目前转到应用市场，故改用实际 Windows 官方产品下载页。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.deepl.com/en/windows-app",
+            "kind": "official-site",
+            "note": "DeepL 官方 Windows 应用页提供 Download for free；不使用已转到应用市场的旧 app 地址。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "youdao-dict",
+      "canonicalName": "网易有道词典",
+      "description": "词典、翻译与外语学习工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "有道词典",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://dict.youdao.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://dict.youdao.com/",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://dict.youdao.com/",
+            "kind": "official-site",
+            "note": "网易有道自有词典页面展示有道词典与词典、翻译产品，主页同时提供不同平台下载。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chrome",
+      "canonicalName": "Google Chrome",
+      "description": "Google 浏览器",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "Chrome",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.google.com/chrome/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.google.com/chrome/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.google.com/chrome/",
+            "kind": "official-site",
+            "note": "Google 官方 Chrome 页面展示浏览器品牌并提供下载，Chrome 与 Google Chrome 对应同一产品。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge",
+      "canonicalName": "Microsoft Edge",
+      "description": "微软浏览器",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "Edge",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.microsoft.com/zh-cn/edge/download",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.microsoft.com/zh-cn/edge/download",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.microsoft.com/zh-cn/edge/download",
+            "kind": "official-site",
+            "note": "微软中文 Edge 下载页明确显示 Microsoft Edge、各系统版本和许可；保存不含地区跟踪参数的微软入口。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "everything",
+      "canonicalName": "Everything",
+      "description": "本地文件搜索工具",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.voidtools.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.voidtools.com/downloads/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.voidtools.com/",
+            "kind": "official-site",
+            "note": "voidtools 主页明确标注 Everything 文件搜索工具并链接官方 Downloads 页面。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.voidtools.com/downloads/",
+            "kind": "official-site",
+            "note": "Everything 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sumatrapdf",
+      "canonicalName": "SumatraPDF",
+      "description": "PDF 与电子书阅读器",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [
+        {
+          "name": "Sumatra PDF",
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.sumatrapdfreader.org/",
+          "purpose": "home",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.sumatrapdfreader.org/download-free-pdf-viewer",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.sumatrapdfreader.org/",
+            "kind": "official-site",
+            "note": "Sumatra PDF 官网与下载页同时使用 Sumatra PDF 和 SumatraPDF 两种排版，提供阅读器官方分发入口。"
+          },
+          {
+            "id": "download",
+            "url": "https://www.sumatrapdfreader.org/download-free-pdf-viewer",
+            "kind": "official-site",
+            "note": "SumatraPDF 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "baidu-netdisk",
+      "canonicalName": "百度网盘",
+      "description": "文件存储、同步与分享",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://pan.baidu.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://pan.baidu.com/download",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.baidu.com/more/",
+            "kind": "official-cross-link",
+            "note": "百度官方产品大全明确将百度网盘链接至 pan.baidu.com；主入口以官方产品交叉链接核实，不把本机可达性视作归属证据。"
+          },
+          {
+            "id": "download",
+            "url": "https://pan.baidu.com/download",
+            "kind": "official-site",
+            "note": "百度网盘 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quark-pan",
+      "canonicalName": "夸克网盘",
+      "description": "文件存储与分享",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://pan.quark.cn/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://pan.quark.cn/",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://pan.quark.cn/",
+            "kind": "official-site",
+            "note": "夸克网盘自有主页显示官方产品、网页版登录与各系统客户端下载；官网与下载共用此稳定页面。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qq",
+      "canonicalName": "QQ",
+      "description": "即时通信与群组交流",
+      "nameEvidenceIds": ["publisher", "official-link"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://im.qq.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["publisher", "official-link"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://im.qq.com/",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["publisher", "official-link"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "publisher",
+            "url": "https://www.tencent.com/products/qq/",
+            "kind": "official-site",
+            "note": "腾讯官方 QQ 产品页明确说明 QQ 为其即时通信产品。"
+          },
+          {
+            "id": "official-link",
+            "url": "https://security.tencent.com/index.php/blog/msg/294",
+            "kind": "official-cross-link",
+            "note": "腾讯安全应急响应中心的 QQ 专项文章明确给出 im.qq.com 官方下载主域；本次主站直连受阻，身份依据保留该官方交叉链接，不承诺本地或各地区可达。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wechat",
+      "canonicalName": "微信",
+      "description": "即时通信与群组交流",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://weixin.qq.com/",
+          "purpose": "home",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://weixin.qq.com/",
+          "purpose": "download",
+          "language": "und",
+          "region": "CN",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://weixin.qq.com/",
+            "kind": "official-site",
+            "note": "微信自有主页标题显示微信，并链接 Windows、macOS 和 Linux 客户端；不将 WeChat 国际服务名称自动映射到中国区微信。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "epic-games-store",
+      "canonicalName": "Epic Games Store",
+      "description": "Epic 游戏商店与平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://store.epicgames.com/",
+          "purpose": "store",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://store.epicgames.com/download",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["download"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://store.epicgames.com/",
+            "kind": "official-site",
+            "note": "Epic Games Store 官方商店与下载页确认商店品牌和 Epic Games Launcher 下载用途。"
+          },
+          {
+            "id": "download",
+            "url": "https://store.epicgames.com/download",
+            "kind": "official-site",
+            "note": "Epic Games Store 的官方下载页面，核对页面用途后收录；只保存稳定页面，不保存临时安装包或带账号的链接。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wegame",
+      "canonicalName": "WeGame",
+      "description": "腾讯游戏平台",
+      "nameEvidenceIds": ["primary"],
+      "aliases": [],
+      "defaultEntryId": "main",
+      "entries": [
+        {
+          "id": "main",
+          "label": "官方入口",
+          "url": "https://www.wegame.com.cn/",
+          "purpose": "store",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        },
+        {
+          "id": "download",
+          "label": "官方下载页面",
+          "url": "https://www.wegame.com.cn/",
+          "purpose": "download",
+          "language": "und",
+          "region": "global",
+          "names": [],
+          "evidenceIds": ["primary"]
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-10-15",
+        "sources": [
+          {
+            "id": "primary",
+            "url": "https://www.wegame.com.cn/",
+            "kind": "official-site",
+            "note": "WeGame 自有主页显示品牌、客户端下载与官方渠道；主页同时承担客户端下载功能。"
           }
         ]
       }

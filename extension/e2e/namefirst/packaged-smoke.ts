@@ -52,18 +52,21 @@ for (const target of ["chrome", "edge"] as const) {
         }),
       );
       const page = await context.newPage();
-      await page.goto(
-        engine === "bing"
-          ? "https://www.bing.com/search?q=Steam"
-          : "https://www.baidu.com/s?wd=Steam",
-      );
-      const card = page.locator("[data-namefirst-card]");
-      await expect(card).toHaveCount(1);
-      await expect(card).toContainText("已核实官方入口");
-      await expect(card.locator("h2 a")).toHaveAttribute(
-        "href",
-        "https://store.steampowered.com/",
-      );
+      for (const [query, url] of [
+        ["Steam", "https://store.steampowered.com/"],
+        ["可画", "https://www.canva.cn/zh_cn/"],
+        ["可画下载", "https://www.canva.cn/download/windows/"],
+      ]) {
+        const base =
+          engine === "bing"
+            ? "https://www.bing.com/search?q="
+            : "https://www.baidu.com/s?wd=";
+        await page.goto(base + encodeURIComponent(query!));
+        const card = page.locator("[data-namefirst-card]");
+        await expect(card).toHaveCount(1);
+        await expect(card).toContainText("已核实官方入口");
+        await expect(card.locator("h2 a")).toHaveAttribute("href", url!);
+      }
       await page.close();
     }
     const manager = await context.newPage();
@@ -92,6 +95,7 @@ for (const target of ["chrome", "edge"] as const) {
       extensionVersion: manifest.version,
       outcome: "passed",
       engines: ["bing", "baidu"],
+      queries: ["Steam", "可画", "可画下载"],
       originalArchiveLoaded: true,
       personalRecordCount: 0,
       iconSizes,
@@ -101,7 +105,7 @@ for (const target of ["chrome", "edge"] as const) {
   }
 }
 await fs.writeFile(
-  path.join(projectRoot, ".cache/stage6-packaged-smoke.json"),
+  path.join(projectRoot, `.cache/${identity.version}-packaged-smoke.json`),
   JSON.stringify({ results }, null, 2) + "\n",
 );
 console.log("Consumer archives loaded and checked in Chrome and Edge.");

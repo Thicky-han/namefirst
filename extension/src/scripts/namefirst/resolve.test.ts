@@ -9,7 +9,7 @@ import { CatalogSchema, isSafePublicHTTPSURL } from "./model.ts";
 import { normalizeName } from "./normalize.ts";
 import { createNameResolver, resolveName } from "./resolve.ts";
 
-const current = { asOf: "2026-10-14" };
+const current = { asOf: "2026-10-15" };
 function resolve(query: string) {
   return resolveName(query, current);
 }
@@ -34,12 +34,12 @@ test("ambiguous names never bypass the verification and expiry gate", () => {
   }
 });
 
-test("bundled catalog validates with source references and 50 reviewed subjects", () => {
+test("bundled catalog validates with source references and 118 reviewed subjects", () => {
   const catalog = CatalogSchema.parse(catalogData);
-  assert.equal(catalog.platforms.length, 50);
+  assert.equal(catalog.platforms.length, 118);
   assert.equal(
     catalog.platforms.flatMap((platform) => platform.entries).length,
-    58,
+    173,
   );
   assert.equal(
     catalog.materialLicense,
@@ -363,7 +363,7 @@ test("explicitly supplied confirmed personal targets keep personal status", () =
 test("unconfirmed, future and unsafe personal inputs are ignored", () => {
   for (const extra of [
     { confirmed: false },
-    { confirmedAt: "2026-10-15T00:00:00Z" },
+    { confirmedAt: "2026-10-16T00:00:00Z" },
     { url: "https://localhost/" },
     { official: true },
   ]) {
@@ -462,7 +462,7 @@ test("malformed catalog and broken evidence references are rejected", () => {
       });
     },
     (catalog: ReturnType<typeof changedCatalog>) => {
-      catalog.platforms[0]!.verification.verifiedAt = "2026-10-15";
+      catalog.platforms[0]!.verification.verifiedAt = "2026-10-16";
     },
   ]) {
     const catalog = changedCatalog();
